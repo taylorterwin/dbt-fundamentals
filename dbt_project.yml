@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'my_new_project'
+name: 'jaffle_shop'
 version: '1.0.0'
 config-version: 2
 
@@ -39,5 +39,13 @@ query-comment:
 # using the `{{ config(...) }}` macro.
 
 models:
+<<<<<<< HEAD
   my_first_dbt_model:
     +tags: "test"
+=======
+  jaffle_shop:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table      
+>>>>>>> 486e096bd39ce4f6bd427d466659f81cf4c76572
